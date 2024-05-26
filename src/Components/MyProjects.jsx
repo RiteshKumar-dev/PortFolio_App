@@ -36,7 +36,7 @@ const MyProjects = () => {
       name: "PortFolio App",
       description:
         "TThis portfolio website is a showcase of my skills and projects as a MERN Stack Developer. Built using React, the website is designed to be fully...",
-      link: "https://dev-ritesh-app.onrender.com/listings",
+      link: "https://riteshdevportfolio.netlify.app/",
       image:
         "https://mir-s3-cdn-cf.behance.net/projects/404/49f28e189617081.Y3JvcCwxMDA2LDc4NywxOTYsMA.jpg",
     },
