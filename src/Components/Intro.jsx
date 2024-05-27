@@ -13,7 +13,7 @@ const Intro = () => {
       <div className="w-full  bg-white rounded-2xl shadow-md overflow-hidden mt-2">
         <div className="flex justify-center p-6 bg-gray-200">
           <img
-            src="https://lh3.googleusercontent.com/a/ACg8ocLuPNp8MTXFeQfjYgkTp90VXp67j0zhHjR6wU7JapLEQ0cslDgM=s96-c"
+            src="https://lh3.googleusercontent.com/a/ACg8ocJozt8h1YvXv-IVvDh-86NC99lRuLw1byjIJSq1PBiakM-FBQ=s96-c"
             alt="Profile"
             className="w-32 h-32 rounded-full border-2 border-gray-300"
           />
