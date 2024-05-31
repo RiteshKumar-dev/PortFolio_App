@@ -9,7 +9,7 @@ const About = () => {
         <span className="absolute left-0 top-0 bg-gray-800 rounded-full h-2 w-2 mt-2"></span>
 
         <h3>
-          Ambitious... first-year BCA student with a strong foundation in web
+          Ambitious... Second-year BCA student with a strong foundation in web
           development, eager to enhance skills in designing and developing web
           applications. Good in front-end and back-end technologies, including
           HTML, CSS, JavaScript, with basic knowledge of React.js and Node.js

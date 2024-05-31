@@ -1,4 +1,5 @@
 import React from "react";
+import ProfilePic from "../assets/profilepic.jpeg";
 import {
   FaLinkedin,
   FaInstagram,
@@ -13,9 +14,10 @@ const Intro = () => {
       <div className="w-full  bg-white rounded-2xl shadow-md overflow-hidden mt-2">
         <div className="flex justify-center p-6 bg-gray-200">
           <img
-            src="https://lh3.googleusercontent.com/a/ACg8ocJozt8h1YvXv-IVvDh-86NC99lRuLw1byjIJSq1PBiakM-FBQ=s96-c"
+            // src="https://lh3.googleusercontent.com/a/ACg8ocJozt8h1YvXv-IVvDh-86NC99lRuLw1byjIJSq1PBiakM-FBQ=s96-c"
+            src={ProfilePic}
             alt="Profile"
-            className="w-32 h-32 rounded-full border-2 border-gray-300"
+            className="w-32 h-32 rounded-full border-2 border-gray-300 shadow-lg object-cover transition-shadow duration-300 ease-in-out hover:shadow-xl cursor-pointer"
           />
         </div>
         <div className="text-center p-6 bg-smoke-white">
@@ -60,6 +62,15 @@ const Intro = () => {
               target="_blank"
             >
               <FaGithub />
+            </a>
+          </div>
+          <div className="mt-6">
+            <a
+              href="https://drive.google.com/file/d/1wv4bQOjCcgKfMNTiKCTRuZN5rx5RKDy6/view"
+              download
+              className="bg-gray-500 text-white py-2 px-4 rounded-2xl hover:bg-gray-600 transition-colors duration-300 ease-in-out"
+            >
+              Download Resume
             </a>
           </div>
         </div>
