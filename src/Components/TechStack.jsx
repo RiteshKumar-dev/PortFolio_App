@@ -7,7 +7,13 @@ import {
   FaBootstrap,
   FaJava,
 } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss, SiMysql } from "react-icons/si";
+import {
+  SiMongodb,
+  SiExpress,
+  SiTailwindcss,
+  SiMysql,
+  SiFirebase,
+} from "react-icons/si";
 
 const TechStack = () => {
   const [showAll, setShowAll] = useState(false);
@@ -32,6 +38,10 @@ const TechStack = () => {
     {
       icon: <SiTailwindcss className="text-blue-400 text-xl" />,
       name: "Tailwind",
+    },
+    {
+      icon: <SiFirebase className="text-blue-400 text-xl" />,
+      name: "Firebase",
     },
   ];
 

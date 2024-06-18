@@ -3,9 +3,11 @@ import { FaSun, FaMoon, FaDesktop } from "react-icons/fa";
 
 const Theme = () => {
   const [theme, setTheme] = useState("Change Theme");
+  const [isOptionsVisible, setIsOptionsVisible] = useState(false);
 
-  const handleThemeChange = (event) => {
-    setTheme(event.target.value);
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    setIsOptionsVisible(false); // Hide options after selection
   };
 
   useEffect(() => {
@@ -16,7 +18,7 @@ const Theme = () => {
         break;
       case "dark":
         document.body.style.backgroundColor = "#1a202c";
-        document.body.style.color = "black";
+        document.body.style.color = "white";
         break;
       case "system":
         document.body.style.backgroundColor = "#f7fafc"; // Smoke-white background
@@ -29,7 +31,7 @@ const Theme = () => {
 
   const getButtonStyle = () => {
     switch (theme) {
-      case "light":
+      case "Change Theme":
         return "bg-yellow-200 text-black";
       case "dark":
         return "bg-gray-400 text-white";
@@ -53,42 +55,51 @@ const Theme = () => {
     }
   };
 
+  const toggleOptionsVisibility = () => {
+    setIsOptionsVisible((prev) => !prev);
+  };
+
   return (
     <div className="flex justify-between items-center p-4 bg-gray-200 rounded-2xl shadow-md w-full mx-auto">
       <div className="text-gray-800 font-semibold text-2xl font-serif">
         Theme
       </div>
-      <div className="flex items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5"
-          />
-        </svg>
-
-        <select
-          value={theme}
-          onChange={handleThemeChange}
-          className="mr-4 p-2 bg-white border border-gray-300 rounded-2xl text-black cursor-pointer"
-        >
-          <option value="Change Theme">Change Theme</option>
-          <option value="dark">Dark</option>
-          <option value="system">System</option>
-        </select>
-        {/* <button
-          className={`flex items-center px-4 py-2 rounded-2xl shadow hover:opacity-75 focus:outline-none  ${getButtonStyle()}`}
+      <div className="flex items-center relative">
+        <button
+          className={`flex items-center px-4 py-2 rounded-2xl shadow hover:opacity-75 focus:outline-none ${getButtonStyle()}`}
+          onClick={toggleOptionsVisibility}
         >
           {getIcon()}
           <span className="ml-2 capitalize">{theme}</span>
-        </button> */}
+        </button>
+        {isOptionsVisible && (
+          <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-300 rounded-xl shadow-lg max-h-48 overflow-y-auto z-10">
+            <div
+              className={`p-2 cursor-pointer hover:bg-gray-100 ${
+                theme === "Change Theme" ? "bg-gray-200" : ""
+              }`}
+              onClick={() => handleThemeChange("Change Theme")}
+            >
+              Change Theme
+            </div>
+            <div
+              className={`p-2 cursor-pointer hover:bg-gray-100 ${
+                theme === "dark" ? "bg-gray-200" : ""
+              }`}
+              onClick={() => handleThemeChange("dark")}
+            >
+              Dark
+            </div>
+            <div
+              className={`p-2 cursor-pointer hover:bg-gray-100 ${
+                theme === "system" ? "bg-gray-200" : ""
+              }`}
+              onClick={() => handleThemeChange("system")}
+            >
+              System
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import BookingApp from "../assets/bookingApp.png";
+import weatherApp from "../assets/weatherApp.png";
+import portfolioApp from "../assets/portfolioApp.png";
 
 const MyProjects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -13,16 +16,14 @@ const MyProjects = () => {
       description:
         "This project demonstrates my proficiency in building scalable, full-stack web applications I have developed...",
       link: "https://riteshdev-bookingapp.netlify.app/",
-      image:
-        "https://a0.muscache.com/im/pictures/miso/Hosting-36774428/original/15110762-267f-4a08-88ae-2d9d3603284d.jpeg?im_w=720",
+      image: BookingApp,
     },
     {
       name: "Weather App",
       description:
         "This project demonstrates my ability to integrate external APIs and create dynamic, user-friendly...",
       link: "https://riteshweatherapp.netlify.app/",
-      image:
-        "https://d7c2r9g9.rocketcdn.me/wp-content/uploads/1112-weather-forecast-powerpoint-template.jpg",
+      image: weatherApp,
     },
     {
       name: "AirBnb Clone",
@@ -37,8 +38,7 @@ const MyProjects = () => {
       description:
         "TThis portfolio website is a showcase of my skills and projects as a MERN Stack Developer. Built using React, the website is designed to be fully...",
       link: "https://riteshdevportfolio.netlify.app/",
-      image:
-        "https://mir-s3-cdn-cf.behance.net/projects/404/49f28e189617081.Y3JvcCwxMDA2LDc4NywxOTYsMA.jpg",
+      image: portfolioApp,
     },
   ];
 
