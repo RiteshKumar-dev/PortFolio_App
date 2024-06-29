@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gray-200 rounded-2xl shadow-md mx-auto mt-5">
+    <div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-2xl shadow-md mx-auto mt-5">
       <h1 className="text-2xl font-bold text-gray-800 font-serif">Skills</h1>
       <hr className="w-full border-t-2 border-gray-300" />
       <div className="flex flex-col gap-4 w-full">

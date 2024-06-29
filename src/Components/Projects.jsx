@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="w-full p-4 cursor-pointer">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 shadow-lg rounded-lg overflow-hidden">
         <div className="text-gray-700 p-4 flex flex-col justify-between">
           <div>
             <h2 className="text-lg font-semibold flex items-center gap-2">

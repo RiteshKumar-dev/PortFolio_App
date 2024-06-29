@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import BookingApp from "../assets/bookingApp.png";
 import weatherApp from "../assets/weatherApp.png";
 import portfolioApp from "../assets/portfolioApp.png";
+import newsApp from "../assets/newsApp.png";
+import airbnbApp from "../assets/airbnbApp.png";
 
 const MyProjects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -12,31 +14,37 @@ const MyProjects = () => {
 
   const projects = [
     {
-      name: "Booking App",
+      name: "Booking_App",
       description:
-        "This project demonstrates my proficiency in building scalable, full-stack web applications I have developed...",
-      link: "https://riteshdev-bookingapp.netlify.app/",
+        "Built a comprehensive booking application with the MERN stack and Tailwind CSS, integrating features for user authentication, booking management, and responsive design...",
+      link: "https://riteshdev-bookingapp.netlify.app",
       image: BookingApp,
     },
     {
-      name: "Weather App",
+      name: "Breaking_News_App",
+      description:
+        "Developed an end-to-end news application using Vite React, and Firebase for authentication and real-time database management...",
+      link: "https://riteshnewsapp.netlify.app",
+      image: newsApp,
+    },
+    {
+      name: "Weather_App",
       description:
         "This project demonstrates my ability to integrate external APIs and create dynamic, user-friendly...",
-      link: "https://riteshweatherapp.netlify.app/",
+      link: "https://riteshweatherapp.netlify.app",
       image: weatherApp,
     },
     {
-      name: "AirBnb Clone",
+      name: "AirBnb_App",
       description:
         "The Airbnb clone is a MERN stack project that replicates the core features of the Airbnb website. It uses MongoDB for database management...",
       link: "https://dev-ritesh-app.onrender.com/listings",
-      image:
-        "https://a0.muscache.com/im/pictures/miso/Hosting-668620215138733009/original/3a98d3df-4b4d-4e03-908c-1e719e46c98d.jpeg?im_w=720",
+      image: airbnbApp,
     },
     {
-      name: "PortFolio App",
+      name: "PortFolio_App",
       description:
-        "TThis portfolio website is a showcase of my skills and projects as a MERN Stack Developer. Built using React, the website is designed to be fully...",
+        "This portfolio website is a showcase of my skills and projects as a MERN Stack Developer. Built using React, the website is designed to be fully...",
       link: "https://riteshdevportfolio.netlify.app/",
       image: portfolioApp,
     },
@@ -45,7 +53,7 @@ const MyProjects = () => {
   const visibleProjects = showAllProjects ? projects : projects.slice(0, 2);
 
   return (
-    <div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gray-200 rounded-2xl shadow-md mx-auto mt-5">
+    <div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-2xl shadow-md mx-auto mt-5">
       <h1 className="text-2xl font-bold text-gray-800 font-serif">
         My Projects
       </h1>

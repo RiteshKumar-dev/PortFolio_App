@@ -19,13 +19,13 @@ const InforBtn = () => {
       <div className="fixed bottom-4 right-4 flex items-center space-x-4">
         <button
           onClick={toggleGmailPopup}
-          className="bg-gray-400 text-gray-600 p-3 rounded-full shadow-lg focus:outline-none"
+          className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 text-gray-600 p-3 rounded-full shadow-lg focus:outline-none"
         >
           <FaEnvelope size={18} />
         </button>
         <button
           onClick={toggleContactPopup}
-          className="bg-gray-400 text-gray-600 p-3 rounded-full shadow-lg focus:outline-none"
+          className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 text-gray-600 p-3 rounded-full shadow-lg focus:outline-none"
         >
           <FaPhone size={18} />
         </button>
