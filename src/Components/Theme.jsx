@@ -76,7 +76,7 @@ const Theme = () => {
           <span className="ml-2 capitalize">{theme}</span>
         </button>
         {isOptionsVisible && (
-          <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-300 rounded-xl shadow-lg max-h-48 overflow-y-auto z-10">
+          <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-300 rounded-xl shadow-lg max-h-48 overflow-y-auto z-50">
             <div
               className={`p-2 cursor-pointer hover:bg-gray-100 ${
                 theme === "Sky_Blue" ? "bg-gray-200" : ""

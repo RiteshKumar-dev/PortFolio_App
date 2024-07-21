@@ -4,9 +4,11 @@ import weatherApp from "../assets/weatherApp.png";
 import portfolioApp from "../assets/portfolioApp.png";
 import newsApp from "../assets/newsApp.png";
 import airbnbApp from "../assets/airbnbApp.png";
+import { motion, useScroll } from "framer-motion";
 
 const MyProjects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const { scrollYProgress } = useScroll();
 
   const toggleProjects = () => {
     setShowAllProjects(!showAllProjects);
@@ -53,7 +55,7 @@ const MyProjects = () => {
   const visibleProjects = showAllProjects ? projects : projects.slice(0, 2);
 
   return (
-    <div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-2xl shadow-md mx-auto mt-5">
+    <motion.div className="relative w-full flex flex-wrap justify-start items-center gap-4 p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-2xl shadow-md mx-auto mt-5">
       <h1 className="text-2xl font-bold text-gray-800 font-serif">
         My Projects
       </h1>
@@ -90,7 +92,7 @@ const MyProjects = () => {
           Show more!
         </button>
       )}
-    </div>
+    </motion.div>
   );
 };
 
