@@ -16,38 +16,38 @@ const MyProjects = () => {
 
   const projects = [
     {
-      name: "Booking_App",
+      name: "Shah Apartments",
       description:
         "Built a comprehensive booking application with the MERN stack and Tailwind CSS, integrating features for user authentication, booking management, and responsive design...",
-      link: "https://riteshdev-bookingapp.netlify.app",
+      link: "https://developershahapartments01.netlify.app/",
       image: BookingApp,
     },
     {
-      name: "Breaking_News_App",
+      name: "Breaking News",
       description:
         "Developed an end-to-end news application using Vite React, and Firebase for authentication and real-time database management...",
-      link: "https://riteshnewsapp.netlify.app",
+      link: "https://developernewsworld01.netlify.app/",
       image: newsApp,
     },
     {
-      name: "Weather_App",
+      name: "Weather App",
       description:
         "This project demonstrates my ability to integrate external APIs and create dynamic, user-friendly...",
-      link: "https://riteshweatherapp.netlify.app",
+      link: "https://developerweatherapp01.netlify.app/",
       image: weatherApp,
     },
     {
-      name: "AirBnb_App",
+      name: "AirBnb",
       description:
         "The Airbnb clone is a MERN stack project that replicates the core features of the Airbnb website. It uses MongoDB for database management...",
       link: "https://dev-ritesh-app.onrender.com/listings",
       image: airbnbApp,
     },
     {
-      name: "PortFolio_App",
+      name: "PortFolio",
       description:
         "This portfolio website is a showcase of my skills and projects as a MERN Stack Developer. Built using React, the website is designed to be fully...",
-      link: "https://riteshdevportfolio.netlify.app/",
+      link: "https://developerportfolio01.netlify.app/",
       image: portfolioApp,
     },
   ];

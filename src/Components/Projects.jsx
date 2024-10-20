@@ -82,7 +82,7 @@ const Projects = () => {
 
   const allProjects = [
     {
-      projectName: "Booking App Frontend",
+      projectName: "Shah Aparments",
       description:
         "🚀The Booking App frontend is a MERN stack web application for booking services like accommodations or appointments. It uses MongoDB for database management, Express.js for server-side logic, React for the frontend, and Node.js for the backend. Tailwind CSS is used for styling, providing a responsive user experience...",
       forks: 10,
@@ -100,7 +100,7 @@ const Projects = () => {
       icon: <FaReact className="text-blue-500 text-xl" />,
     },
     {
-      projectName: "Booking App Backend",
+      projectName: "WanderLust",
       description:
         "🚀The Booking App frontend is a MERN stack web application for booking services like accommodations or appointments. It uses MongoDB for database management, Express.js for server-side logic, React for the frontend, and Node.js for the backend. Tailwind CSS is used for styling, providing a responsive user experience...",
       forks: 15,

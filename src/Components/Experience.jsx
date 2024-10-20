@@ -9,7 +9,7 @@ const Experience = () => {
       <hr className="w-full border-t-2 border-gray-300 " />
       <div className="relative pl-6">
         <span className="absolute left-0 top-0 bg-gray-800 rounded-full h-2 w-2 mt-2"></span>
-        <p>June 2024 - Present</p>
+        <p>June 2024 - October 2024</p>
         <p className="font-semibold">Junior Developer (MERN Stack)</p>
         <p className="text-lg">WebMobril Technologies</p>
         <p className="text-lg truncate">

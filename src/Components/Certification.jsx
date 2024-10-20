@@ -14,7 +14,8 @@ const Certification = () => {
         <p className="text-lg">Apna_College</p>
         <a
           className="font-semibold text-red-500 underline"
-          href="https://drive.google.com/file/d/1ImBkwpxJ7Vm6sD__HhnFZIhsVcxolts9/view?usp=sharing"
+          // href="https://drive.google.com/file/d/1ImBkwpxJ7Vm6sD__HhnFZIhsVcxolts9/view?usp=sharing"
+          href="/"
         >
           Certificate...
         </a>
